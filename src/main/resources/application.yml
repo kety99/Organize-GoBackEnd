@@ -1,0 +1,10 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: ${mysqluser:root}
+    password: ${mysqlpass:123456}
+    url: ${mysqlurl:jdbc:mysql://localhost:8082/myDb?createDatabaseIfNotExist=true}
+  jpa:
+    hibernate:
+      ddl-auto: update
+      #dialect: org.hibernate.dialect.MySQL5Dialect
